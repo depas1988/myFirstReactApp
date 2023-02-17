@@ -63,12 +63,12 @@ const ExpenseForm = (props) => {
       enteredAmount: "",
       enteredDate: "",
     });
+
+    props.onCancelForm(true);
   };
 
   const cancelButtonHandler = function () {
-    const isFormClosed = true;
-
-    props.onCancelForm(isFormClosed);
+    props.onCancelForm(true);
   };
 
   return (
