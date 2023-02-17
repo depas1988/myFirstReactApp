@@ -3,6 +3,7 @@ import Card from "../UI/Card";
 import ExpensesFilter from "./ExpensesFilter.js";
 import React from "react";
 import ExpensesList from "./ExpensesList.js";
+import ExpensesChart from "./ExpensesChart";
 
 function Expense({ arr }) {
   const [filteredYear, setFilteredYear] = React.useState("2019");
@@ -25,6 +26,7 @@ function Expense({ arr }) {
           selected={filteredYear}
           onFilterYear={filterYearHandler}
         ></ExpensesFilter>
+        <ExpensesChart expenses={arrFiltered}></ExpensesChart>
         <ExpensesList items={arrFiltered}></ExpensesList>
       </Card>
     </li>
