@@ -12,15 +12,6 @@ const NewExpense = (props) => {
     props.onAddExpense(expenseData);
   };
 
-  // const addNewExpenseButtonHandler = function () {
-  //   return (
-  //     <div className="new-expense">
-  //       <button onClick={addNewExpenseButtonHandler}>Add New Expense</button>
-  //       <ExpenseForm onSaveExpenseData={saveExpenseDataHandler}></ExpenseForm>
-  //     </div>
-  //   );
-  // };
-
   return (
     <div className="new-expense">
       <ExpenseForm onSaveExpenseData={saveExpenseDataHandler}></ExpenseForm>
@@ -29,7 +20,3 @@ const NewExpense = (props) => {
 };
 
 export default NewExpense;
-
-{
-  /* <button onClick={addNewExpenseButtonHandler}>Add New Expense</button> */
-}
